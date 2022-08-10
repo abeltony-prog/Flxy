@@ -1,11 +1,9 @@
-import React from 'react';
-import GoogleLogin from 'react-google-login';
+import React from "react";
+import GoogleLogin from "react-google-login";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 
-
-function Sigin(){
-
+function Sigin() {
   const { status } = useSession();
   const router = useRouter();
 
@@ -20,13 +18,13 @@ function Sigin(){
     router.push(callBack);
   }
 
-return(
-  <GoogleLogin
-    buttonText="Login"
-    onClick={() => signIn("google", { callbackUrl: callBack })}
-    cookiePolicy={'single_host_origin'}
-  />
-)
+  return (
+    <GoogleLogin
+      buttonText="Login"
+      onClick={() => signIn("google", { callbackUrl: callBack })}
+      cookiePolicy={"single_host_origin"}
+    />
+  );
 }
 
-export default Sigin
+export default Sigin;

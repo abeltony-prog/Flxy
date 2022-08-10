@@ -1,1 +1,6 @@
-import {QueryCache, QueryClient, QueryClientProvider, Hydrate} from "react-query";
+import {
+  QueryCache,
+  QueryClient,
+  QueryClientProvider,
+  Hydrate,
+} from "react-query";
