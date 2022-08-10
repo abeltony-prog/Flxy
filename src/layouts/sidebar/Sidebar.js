@@ -71,7 +71,6 @@ const Sidebar = ({ isMobileSidebarOpen, onSidebarClose, isSidebarOpen }) => {
           ))}
         </List>
       </Box>
-
     </Box>
   );
   if (lgUp) {

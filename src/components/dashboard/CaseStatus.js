@@ -33,7 +33,6 @@ const products = [
     pbg: "danger.main",
     No: "1",
   },
- 
 ];
 
 const CaseStatus = () => {

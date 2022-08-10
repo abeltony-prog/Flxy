@@ -16,6 +16,7 @@
 The free version comes with elegant grid design that helps you play around with the look and feel of the web app the way you want. it's carefully hand crafted minimal admin template, Its build with modular and modern design.
 
 People love this react dashboard as it is well-known for creating a seamless experience for users with modern design helping to execute complex requirements. It readily offers UI elements, creative pages, and user-friendliness environment.
+
 </p>
 
 <!-- <h4><a href="https://wrappixel.com/demos/free-admin-templates/xtreme-admin-lite/xtreme-html/ltr/index.html">Free Version Demo Link</a></h4> -->
@@ -87,7 +88,6 @@ People love this react dashboard as it is well-known for creating a seamless exp
     <p>Licensed under MIT (<a href="https://www.wrappixel.com/license/">https://www.wrappixel.com/license/</a>)</p>
   </li>
 </ul>
-
 
 <!-- Upgrade to Premium version of Template -->
 <h2>Upgrade to Premium version</h2>
