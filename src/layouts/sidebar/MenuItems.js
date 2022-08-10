@@ -6,8 +6,8 @@ const Menuitems = [
   },
 
   {
-    title: "Forms",
-    icon: "layout",
+    title: "FTS",
+    icon: "loader",
     href: "/FTS",
   },
   {

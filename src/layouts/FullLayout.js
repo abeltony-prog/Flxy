@@ -57,7 +57,6 @@ const FullLayout = ({ children }) => {
           }}
         >
           <Box sx={{ minHeight: "calc(100vh - 170px)" }}>{children}</Box>
-          <Footer />
         </Container>
       </PageWrapper>
     </MainWrapper>
