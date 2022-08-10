@@ -1,7 +1,7 @@
 import { Grid } from "@mui/material";
-import DailyActivity from "../src/components/dashboard/DailyActivity";
-import ProductPerfomance from "../src/components/dashboard/ProductPerfomance";
+import CaseStatus from "../src/components/dashboard/CaseStatus";
 import MonthlyOverview from "../src/components/dashboard/MonthlyOverview";
+import ElevationStatus from "../src/components/dashboard/ElevationStatus";
 
 export default function Index() {
   return (
@@ -11,10 +11,10 @@ export default function Index() {
       </Grid>
       {/* ------------------------- row 1 ------------------------- */}
       <Grid item xs={12} lg={4}>
-        <DailyActivity />
+        <ElevationStatus />
       </Grid>
       <Grid item xs={12} lg={8}>
-        <ProductPerfomance />
+        <CaseStatus />
       </Grid>
     </Grid>
   );

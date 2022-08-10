@@ -36,7 +36,7 @@ const products = [
  
 ];
 
-const ProductPerfomance = () => {
+const CaseStatus = () => {
   return (
     <BaseCard title="Name Cases">
       <Table
@@ -120,4 +120,4 @@ const ProductPerfomance = () => {
   );
 };
 
-export default ProductPerfomance;
+export default CaseStatus;

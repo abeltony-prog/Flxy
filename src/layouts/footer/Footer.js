@@ -6,7 +6,7 @@ const Footer = () => {
     <Box sx={{ p: 3, textAlign: "center" }}>
       <Typography>
         © 2022 All rights reserved by{" AbelTony "}
-        <Link href="https://www.wrappixel.com">
+        <Link href="https://github.com/abeltony-prog">
           <a>Github</a>
         </Link>{" "}
       </Typography>

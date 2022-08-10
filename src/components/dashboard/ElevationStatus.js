@@ -36,7 +36,7 @@ const activities = [
   },
 ];
 
-const DailyActivity = () => {
+const ElevationStatus = () => {
   return (
     <BaseCard title="Elevation Status">
       <Timeline
@@ -79,4 +79,4 @@ const DailyActivity = () => {
   );
 };
 
-export default DailyActivity;
+export default ElevationStatus;
