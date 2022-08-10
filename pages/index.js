@@ -13,7 +13,9 @@ export default function Index() {
 
   console.log(session)
   if(session?.user = null){
-    return <p>hello</p>
+    return (
+      <>ndsjn</>
+    )
   }else{
   return (
     <Grid container spacing={0}>

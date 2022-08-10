@@ -7,9 +7,9 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { CacheProvider } from "@emotion/react";
 import theme from "../src/theme/theme";
 import createEmotionCache from "../src/createEmotionCache";
-import { QueryClientProvider, QueryClient } from "react-query";
 import FullLayout from "../src/layouts/FullLayout";
 import "../styles/style.css";
+import { QueryClientProvider, QueryClient } from '@tanstack/react-query'
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 // config.autoAddCss = false;
