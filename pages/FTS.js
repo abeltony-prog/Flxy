@@ -17,19 +17,21 @@ const Forms = () => {
   return (
     <Grid container spacing={0}>
       <Grid item xs={12} lg={12}>
-        <BaseCard title="Form Layout">
+        <BaseCard title="FTS">
           <Stack spacing={3}>
             <TextField
-              id="name-basic"
-              label="Name"
+              label="Case Id"
               variant="outlined"
-              defaultValue="Nirav Joshi"
             />
-            <TextField id="email-basic" label="Email" variant="outlined" />
+            <TextField id="" label="From" variant="outlined" />
             <TextField
-              id="pass-basic"
-              label="Password"
-              type="password"
+              label="To"
+              type="text"
+              variant="outlined"
+            />
+                        <TextField
+              label="Home Region"
+              type="text"
               variant="outlined"
             />
             <TextField
