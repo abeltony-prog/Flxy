@@ -52,10 +52,11 @@ const Forms = () => {
               <FormControlLabel
                 control={<Checkbox defaultChecked />}
                 label="Terms & Condition"
+                type="checkbox"
               />
               <FormControlLabel
                 disabled
-                control={<Checkbox />}
+                control={<Checkbox/>}
                 label="Disabled"
               />
             </FormGroup>
