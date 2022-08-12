@@ -31,6 +31,7 @@ export default function MyApp(props) {
               name="viewport"
               content="initial-scale=1, width=device-width"
             />
+            <script src="https://accounts.google.com/gsi/client" async defer></script>
           </Head>
           <ThemeProvider theme={theme}>
             <CssBaseline />
