@@ -44,7 +44,11 @@ const Forms = () => {
               defaultValue="L1 , L2 , L3 or NA"
               variant="outlined"
             />
-
+<TextField
+              id="er-basic"
+              label="Title"
+              variant="outlined"
+            />
 <TextField
               id="outlined-multiline-static"
               label="Issu Sumary"
@@ -53,8 +57,10 @@ const Forms = () => {
               defaultValue="Type in the Sumarry"
             />
 
+
+
            <select className="form-control py-2">
-              <option value="">Select Type</option>
+              <option value="">Select FTS Type</option>
               <option value="">Handover to Home region</option>
               <option value="">FTS</option>
               <option value="">Extended Hours request</option>
