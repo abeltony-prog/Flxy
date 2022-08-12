@@ -5,7 +5,7 @@ import ElevationStatus from "../../src/components/dashboard/ElevationStatus";
 const FTS = () => {
   return (
     <Grid container spacing={0}>
-            <Grid item xs={12} lg={4}>
+      <Grid item xs={12} lg={4}>
         <ElevationStatus />
       </Grid>
       <Grid item xs={12} lg={8}>

@@ -95,7 +95,8 @@ const MonthlyOverview = () => {
     },
     {
       name: "Home",
-      data: [8, 4, 0, 12, 9, 12, 5],    },
+      data: [8, 4, 0, 12, 9, 12, 5],
+    },
   ];
   return (
     <BaseCard title="Weekly Overview">

@@ -18,7 +18,7 @@ const Menuitems = [
     title: "FTS",
     icon: "plus",
     href: "/FTS/ftsForm",
-  }
+  },
 ];
 
 export default Menuitems;
