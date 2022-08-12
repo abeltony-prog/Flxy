@@ -142,9 +142,21 @@ const Forms = () => {
             </FormControl>
           </Stack>
           <br />
+          <div class="row g-3">
+  <div class="col-md-9">
           <Button variant="contained" mt={2}>
             Submit
           </Button>
+          
+          </div>
+          <div class="col-md-3">
+          <Button variant="contained" mt={2}>
+            Generate Template
+          </Button>
+          
+          </div>
+          </div>
+          
         </BaseCard>
       </Grid>
     </Grid>
