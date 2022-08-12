@@ -99,7 +99,7 @@ const ProfileDD = () => {
                 <ListItemText primary="Change Password" />
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="My Settings" />
+                <ListItemText primary="Switch Admin" />
               </ListItemButton>
             </List>
           </Box>

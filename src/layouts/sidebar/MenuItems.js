@@ -4,17 +4,21 @@ const Menuitems = [
     icon: "home",
     href: "/",
   },
-
+  {
+    title: "FTS & Handovers",
+    icon: "grid",
+    href: "/FTS/table",
+  },
+  {
+    title: "Elevation",
+    icon: "plus",
+    href: "/Elevation/Form",
+  },
   {
     title: "FTS",
-    icon: "loader",
-    href: "/FTS",
-  },
-  {
-    title: "Tables",
-    icon: "grid",
-    href: "/table",
-  },
+    icon: "plus",
+    href: "/FTS/ftsForm",
+  }
 ];
 
 export default Menuitems;

@@ -6,13 +6,10 @@ import ElevationStatus from "../src/components/dashboard/ElevationStatus";
 export default function Index() {
   return (
     <Grid container spacing={0}>
-      <Grid item xs={12} lg={12}>
+      {/* <Grid item xs={12} lg={12}>
         <MonthlyOverview />
-      </Grid>
-      <Grid item xs={12} lg={4}>
-        <ElevationStatus />
-      </Grid>
-      <Grid item xs={12} lg={8}>
+      </Grid> */}
+      <Grid item xs={12} lg={12}>
         <CaseStatus />
       </Grid>
     </Grid>

@@ -8,6 +8,7 @@ import {
   TableHead,
   TableRow,
   Chip,
+  Button,
 } from "@mui/material";
 import BaseCard from "../baseCard/BaseCard";
 
@@ -37,7 +38,7 @@ const products = [
 
 const CaseStatus = () => {
   return (
-    <BaseCard title="Name Cases">
+    <BaseCard title="Today FTS">
       <Table
         aria-label="simple table"
         sx={{
