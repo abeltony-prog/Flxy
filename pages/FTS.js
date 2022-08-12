@@ -5,7 +5,6 @@ import {
   FormLabel,
   FormControl,
   Button,
-
 } from "@mui/material";
 import BaseCard from "../src/components/baseCard/BaseCard";
 
@@ -27,7 +26,7 @@ const Forms = () => {
               defaultValue="L1 , L2 , L3 or NA"
               variant="outlined"
             />
-                        <select className="form-control py-2">
+            <select className="form-control py-2">
               <option value="">Select Product</option>
               <option value="">DP</option>
               <option value="">LRP</option>
@@ -43,7 +42,7 @@ const Forms = () => {
               defaultValue="Type in the Sumarry"
             />
 
-<TextField
+            <TextField
               id="outlined-multiline-static"
               label="What has been Done"
               multiline
@@ -56,7 +55,6 @@ const Forms = () => {
               rows={4}
             />
 
-
             <select className="form-control py-2">
               <option value="">Select FTS Type</option>
               <option value="">Handover to Home region</option>
@@ -64,8 +62,6 @@ const Forms = () => {
               <option value="">Extended Hours request</option>
               <option value="">Warm HandOver</option>
             </select>
-
-            
 
             <FormControl className="row col-md-12">
               <FormLabel id="demo-radio-buttons-group-label">More</FormLabel>
@@ -128,7 +124,7 @@ const Forms = () => {
                       class="form-check-label"
                       for="flexSwitchCheckDefault"
                     >
-                     Severity One
+                      Severity One
                     </label>
                   </div>{" "}
                 </div>
@@ -137,20 +133,17 @@ const Forms = () => {
           </Stack>
           <br />
           <div class="row g-3">
-  <div class="col-md-9">
-          <Button variant="contained" mt={2}>
-            Submit
-          </Button>
-          
+            <div class="col-md-9">
+              <Button variant="contained" mt={2}>
+                Submit
+              </Button>
+            </div>
+            <div class="col-md-3">
+              <Button variant="contained" mt={2}>
+                Generate Template
+              </Button>
+            </div>
           </div>
-          <div class="col-md-3">
-          <Button variant="contained" mt={2}>
-            Generate Template
-          </Button>
-          
-          </div>
-          </div>
-          
         </BaseCard>
       </Grid>
     </Grid>
