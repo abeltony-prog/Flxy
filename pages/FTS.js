@@ -10,6 +10,8 @@ import {
   FormLabel,
   FormControl,
   Button,
+  SelectInput,
+  Select
 } from "@mui/material";
 import BaseCard from "../src/components/baseCard/BaseCard";
 
@@ -34,53 +36,57 @@ const Forms = () => {
               type="text"
               variant="outlined"
             />
-            <TextField
-              id="outlined-multiline-static"
-              label="Text Area"
-              multiline
-              rows={4}
-              defaultValue="Default Value"
-            />
+
             <TextField
               error
               id="er-basic"
-              label="Error"
-              defaultValue="ad1avi"
+              label="Elevated"
+              defaultValue="L1 , L2 , L3 or NA"
               variant="outlined"
             />
-            <FormGroup>
-              <FormControlLabel
-                control={<Checkbox defaultChecked />}
-                label="Terms & Condition"
-                type="checkbox"
-              />
-              <FormControlLabel
-                disabled
-                control={<Checkbox/>}
-                label="Disabled"
-              />
-            </FormGroup>
+
+<TextField
+              id="outlined-multiline-static"
+              label="Issu Sumary"
+              multiline
+              rows={4}
+              defaultValue="Type in the Sumarry"
+            />
+
+           <select className="form-control py-2">
+              <option value="">Select Type</option>
+              <option value="">Handover to Home region</option>
+              <option value="">FTS</option>
+              <option value="">Extended Hours request</option>
+              <option value="">Warm HandOver</option>
+           </select>
+
             <FormControl>
-              <FormLabel id="demo-radio-buttons-group-label">Gender</FormLabel>
+              <FormLabel id="demo-radio-buttons-group-label">More</FormLabel>
               <RadioGroup
                 aria-labelledby="demo-radio-buttons-group-label"
                 defaultValue="female"
                 name="radio-buttons-group"
               >
                 <FormControlLabel
-                  value="female"
+                  value="DM Request"
                   control={<Radio />}
-                  label="Female"
+                  label="DM Request"
                 />
                 <FormControlLabel
-                  value="male"
+                  value="Critical"
                   control={<Radio />}
-                  label="Male"
+                  label="Severity One"
+                />
+               <FormControlLabel
+                  value="Critical"
+                  control={<Radio />}
+                  label="Critical to the business"
                 />
                 <FormControlLabel
-                  value="other"
+                  value="Customer Availability"
                   control={<Radio />}
-                  label="Other"
+                  label="Customer Availability"
                 />
               </RadioGroup>
             </FormControl>
@@ -89,24 +95,6 @@ const Forms = () => {
           <Button variant="contained" mt={2}>
             Submit
           </Button>
-        </BaseCard>
-      </Grid>
-
-      <Grid item xs={12} lg={12}>
-        <BaseCard title="Form Design Type">
-          <Stack spacing={3} direction="row">
-            <TextField
-              id="outlined-basic"
-              label="Outlined"
-              variant="outlined"
-            />
-            <TextField id="filled-basic" label="Filled" variant="filled" />
-            <TextField
-              id="standard-basic"
-              label="Standard"
-              variant="standard"
-            />
-          </Stack>
         </BaseCard>
       </Grid>
     </Grid>
