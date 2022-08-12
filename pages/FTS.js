@@ -11,7 +11,7 @@ import {
   FormControl,
   Button,
   SelectInput,
-  Select
+  Select,
 } from "@mui/material";
 import BaseCard from "../src/components/baseCard/BaseCard";
 
@@ -21,21 +21,10 @@ const Forms = () => {
       <Grid item xs={12} lg={12}>
         <BaseCard title="FTS">
           <Stack spacing={3}>
-            <TextField
-              label="Case Id"
-              variant="outlined"
-            />
+            <TextField label="Case Id" variant="outlined" />
             <TextField id="" label="From" variant="outlined" />
-            <TextField
-              label="To"
-              type="text"
-              variant="outlined"
-            />
-                        <TextField
-              label="Home Region"
-              type="text"
-              variant="outlined"
-            />
+            <TextField label="To" type="text" variant="outlined" />
+            <TextField label="Home Region" type="text" variant="outlined" />
 
             <TextField
               error
@@ -44,12 +33,15 @@ const Forms = () => {
               defaultValue="L1 , L2 , L3 or NA"
               variant="outlined"
             />
-<TextField
-              id="er-basic"
-              label="Title"
-              variant="outlined"
-            />
-<TextField
+                        <select className="form-control py-2">
+              <option value="">Select Product</option>
+              <option value="">DP</option>
+              <option value="">LRP</option>
+            </select>
+            <TextField label="version" type="text" variant="outlined" />
+
+            <TextField id="er-basic" label="Title" variant="outlined" />
+            <TextField
               id="outlined-multiline-static"
               label="Issu Sumary"
               multiline
@@ -57,44 +49,96 @@ const Forms = () => {
               defaultValue="Type in the Sumarry"
             />
 
+<TextField
+              id="outlined-multiline-static"
+              label="What has been Done"
+              multiline
+              rows={3}
+            />
+            <TextField
+              id="outlined-multiline-static"
+              label="Whats next"
+              multiline
+              rows={4}
+            />
 
 
-           <select className="form-control py-2">
+            <select className="form-control py-2">
               <option value="">Select FTS Type</option>
               <option value="">Handover to Home region</option>
               <option value="">FTS</option>
               <option value="">Extended Hours request</option>
               <option value="">Warm HandOver</option>
-           </select>
+            </select>
 
-            <FormControl>
+            
+
+            <FormControl className="row col-md-12">
               <FormLabel id="demo-radio-buttons-group-label">More</FormLabel>
-              <RadioGroup
-                aria-labelledby="demo-radio-buttons-group-label"
-                defaultValue="female"
-                name="radio-buttons-group"
-              >
-                <FormControlLabel
-                  value="DM Request"
-                  control={<Radio />}
-                  label="DM Request"
-                />
-                <FormControlLabel
-                  value="Critical"
-                  control={<Radio />}
-                  label="Severity One"
-                />
-               <FormControlLabel
-                  value="Critical"
-                  control={<Radio />}
-                  label="Critical to the business"
-                />
-                <FormControlLabel
-                  value="Customer Availability"
-                  control={<Radio />}
-                  label="Customer Availability"
-                />
-              </RadioGroup>
+              <br />
+
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexSwitchCheckDefault"
+                    >
+                      DM Request
+                    </label>
+                  </div>{" "}
+                </div>
+                <div class="col-md-3">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexSwitchCheckDefault"
+                    >
+                      Customer Available
+                    </label>
+                  </div>{" "}
+                </div>
+                <div class="col-md-3">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexSwitchCheckDefault"
+                    >
+                      Clitical to the business
+                    </label>
+                  </div>{" "}
+                </div>
+                <div class="col-md-3">
+                  <div class="form-check form-switch">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="flexSwitchCheckDefault"
+                    />
+                    <label
+                      class="form-check-label"
+                      for="flexSwitchCheckDefault"
+                    >
+                     Severity One
+                    </label>
+                  </div>{" "}
+                </div>
+              </div>
             </FormControl>
           </Stack>
           <br />
