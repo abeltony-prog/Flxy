@@ -93,12 +93,6 @@ const ProfileDD = () => {
                 <ListItemText primary="Edit Profile" />
               </ListItemButton>
               <ListItemButton>
-                <ListItemText primary="Account" />
-              </ListItemButton>
-              <ListItemButton>
-                <ListItemText primary="Change Password" />
-              </ListItemButton>
-              <ListItemButton>
                 <ListItemText primary="Switch Admin" />
               </ListItemButton>
             </List>

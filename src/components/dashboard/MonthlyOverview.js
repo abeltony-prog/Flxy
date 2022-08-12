@@ -19,7 +19,7 @@ const MonthlyOverview = () => {
     plotOptions: {
       bar: {
         horizontal: false,
-        columnWidth: "42%",
+        columnWidth: "23%",
         endingShape: "rounded",
         borderRadius: 5,
       },
@@ -53,18 +53,13 @@ const MonthlyOverview = () => {
     xaxis: {
       type: "category",
       categories: [
-        "Jan",
-        "Feb",
-        "Mar",
-        "Apr",
-        "May",
-        "Jun",
-        "July",
-        "Aug",
-        "Sept",
-        "Oct",
-        "Nov",
-        "Dec",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday",
       ],
       labels: {
         style: {
@@ -74,8 +69,8 @@ const MonthlyOverview = () => {
     },
     yaxis: {
       show: true,
-      min: 100,
-      max: 400,
+      min: 0,
+      max: 30,
       tickAmount: 3,
       labels: {
         style: {
@@ -85,7 +80,7 @@ const MonthlyOverview = () => {
     },
     stroke: {
       show: true,
-      width: 5,
+      width: 1,
       lineCap: "butt",
       colors: ["transparent"],
     },
@@ -95,16 +90,15 @@ const MonthlyOverview = () => {
   };
   const seriessalesoverview = [
     {
-      name: "Manager",
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      name: "FTS",
+      data: [13, 2, 9, 0, 9, 6, 9],
     },
     {
-      name: "Tony",
-      data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
-    },
+      name: "Home",
+      data: [8, 4, 0, 12, 9, 12, 5],    },
   ];
   return (
-    <BaseCard title="Monthly Overview">
+    <BaseCard title="Weekly Overview">
       <Chart
         options={optionssalesoverview}
         series={seriessalesoverview}
