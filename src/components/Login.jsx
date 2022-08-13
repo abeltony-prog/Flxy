@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useCallback } from "react";
+import { useSession ,signIn} from "next-auth/react"
+
+
 import {
   Typography,
   Box,
@@ -10,37 +13,25 @@ import {
   Chip,
   Button,
 } from "@mui/material";
-import BaseCard from "./baseCard/BaseCard";
-
-const products = [
-  {
-    Type: "EHR",
-    region: "AMS",
-    priority: "Low",
-    pbg: "primary.main",
-    No: "2",
-  },
-  {
-    Type: "HHO",
-    region: "EMEA",
-    priority: "High",
-    pbg: "info.main",
-    No: "3",
-  },
-  {
-    Type: "FTS",
-    region: "APJ",
-    priority: "Critical",
-    pbg: "danger.main",
-    No: "1",
-  },
-];
-
-const CaseStatus = () => {
+import { useRouter } from "next/router";
+const Signin = () => {
+    const { status } = useSession();
+    const router = useRouter();
+    let callBack = "/";
+    if (
+      router.query.from !== undefined &&
+      typeof router.query.from === "string"
+    ) {
+      callBack = router.query.from;
+    }
+    if (status === "authenticated") {
+      router.push(callBack);
+    }
   return (
-<button>Sign out</button>
+
+    <button onClick={() => signIn("google", {callbackUrl:callBack})}>Sign in</button>
 
   );
 };
 
-export default CaseStatus;
+export default Signin;

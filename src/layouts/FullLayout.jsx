@@ -8,10 +8,10 @@ import {
   Box,
   Grid,
 } from "@mui/material";
-import Sigin from "../../src/components/Login";
 
 import Header from "./header/Header";
 import Sidebar from "./sidebar/Sidebar";
+import Signin from "../../src/components/Login";
 
 const MainWrapper = experimentalStyled("div")(() => ({
   display: "flex",
@@ -76,7 +76,7 @@ const FullLayout = ({ children }) => {
   return (
     <MainWrapper Container spacing={0}>
       <Grid item xs={12} lg={12}>
-      <Sigin xs={12} lg={12}/>
+      <Signin xs={12} lg={12}/>
       </Grid>
     </MainWrapper>
   );
