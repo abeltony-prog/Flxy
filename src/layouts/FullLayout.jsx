@@ -1,10 +1,15 @@
 import React from "react";
+import { useSession, signIn, signOut } from "next-auth/react"
+
 import {
   experimentalStyled,
   useMediaQuery,
   Container,
   Box,
+  Grid,
 } from "@mui/material";
+import Sigin from "../../src/components/Login";
+
 import Header from "./header/Header";
 import Sidebar from "./sidebar/Sidebar";
 
@@ -33,7 +38,10 @@ const FullLayout = ({ children }) => {
   const [isSidebarOpen, setSidebarOpen] = React.useState(true);
   const [isMobileSidebarOpen, setMobileSidebarOpen] = React.useState(false);
   const lgUp = useMediaQuery((theme) => theme.breakpoints.up("lg"));
-  return (
+  const { data: session } = useSession()
+  if (session) {
+    return (
+      <>
     <MainWrapper>
       <Header
         sx={{
@@ -47,6 +55,7 @@ const FullLayout = ({ children }) => {
         isMobileSidebarOpen={isMobileSidebarOpen}
         onSidebarClose={() => setMobileSidebarOpen(false)}
       />
+
       <PageWrapper>
         <Container
           maxWidth={false}
@@ -58,6 +67,17 @@ const FullLayout = ({ children }) => {
           <Box sx={{ minHeight: "calc(100vh - 170px)" }}>{children}</Box>
         </Container>
       </PageWrapper>
+    </MainWrapper>
+        {/* Signed in as {session.user.email} <br />
+        <button onClick={() => signOut()}>Sign out</button> */}
+      </>
+    )
+  }
+  return (
+    <MainWrapper Container spacing={0}>
+      <Grid item xs={12} lg={12}>
+      <Sigin xs={12} lg={12}/>
+      </Grid>
     </MainWrapper>
   );
 };
